@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q4W-uH-Vdz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="qb1-75-zCi">
+            <objects>
+                <viewController id="q4W-uH-Vdz" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pc0-dl-vc1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="8rQ-b4-tcU">
+                                <rect key="frame" x="87.5" y="65" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="3Eg-y6-Dem"/>
+                                    <constraint firstAttribute="width" constant="200" id="4Lb-tr-1qz"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PWL-lG-ZEV" customClass="HHRoundCornerImageView">
+                                <rect key="frame" x="87.5" y="332" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Hxj-VG-6Fr"/>
+                                    <constraint firstAttribute="width" constant="200" id="SRo-vc-Ec8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="IMG.PNG"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PWL-lG-ZEV" firstAttribute="top" secondItem="8rQ-b4-tcU" secondAttribute="bottom" constant="67" id="3Dx-vV-vGx"/>
+                            <constraint firstItem="8rQ-b4-tcU" firstAttribute="top" secondItem="mCC-dB-bZp" secondAttribute="top" constant="45" id="DQb-hM-ABu"/>
+                            <constraint firstItem="PWL-lG-ZEV" firstAttribute="centerX" secondItem="8rQ-b4-tcU" secondAttribute="centerX" id="H5m-KS-5qI"/>
+                            <constraint firstItem="8rQ-b4-tcU" firstAttribute="centerX" secondItem="mCC-dB-bZp" secondAttribute="centerX" id="g1J-Xj-cdM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mCC-dB-bZp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9iH-lD-bfI" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG.PNG" width="1024" height="1024"/>
+    </resources>
+</document>
