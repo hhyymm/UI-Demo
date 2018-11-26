@@ -13,7 +13,15 @@ NS_ASSUME_NONNULL_BEGIN
 IB_DESIGNABLE
 @interface HHRoundCornerImageView : UIView
 @property (strong, nonatomic) IBInspectable UIImage *image;
-@property (assign, nonatomic) CGFloat cornerR;
+@property (strong, nonatomic) IBInspectable UIColor *borderColor;
+@property (assign, nonatomic) IBInspectable CGFloat  borderWidth;
+@property (assign, nonatomic) IBInspectable CGFloat  cornerRadius;
+@property (assign, nonatomic) IBInspectable BOOL borderInside;
+@end
+
+IB_DESIGNABLE
+@interface HHRoundBoundsImageView : HHRoundCornerImageView
+
 @end
 
 NS_ASSUME_NONNULL_END
