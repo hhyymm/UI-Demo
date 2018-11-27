@@ -19,36 +19,65 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="8rQ-b4-tcU">
-                                <rect key="frame" x="87.5" y="65" width="200" height="200"/>
+                                <rect key="frame" x="112.5" y="65" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="3Eg-y6-Dem"/>
-                                    <constraint firstAttribute="width" constant="200" id="4Lb-tr-1qz"/>
+                                    <constraint firstAttribute="height" constant="150" id="3Eg-y6-Dem"/>
+                                    <constraint firstAttribute="width" constant="150" id="4Lb-tr-1qz"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PWL-lG-ZEV" customClass="HHRoundCornerImageView">
-                                <rect key="frame" x="87.5" y="332" width="200" height="200"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZx-id-0Mo" customClass="HHRoundCornerImageView">
+                                <rect key="frame" x="112.5" y="225" width="150" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Hxj-VG-6Fr"/>
-                                    <constraint firstAttribute="width" constant="200" id="SRo-vc-Ec8"/>
+                                    <constraint firstAttribute="width" constant="150" id="Ir6-I6-hmQ"/>
+                                    <constraint firstAttribute="height" constant="150" id="pus-N4-o3x"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="IMG.PNG"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.23439396339999999" blue="0.1398386529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderInside" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loc-NI-hJ4" customClass="HHRoundBoundsImageView">
+                                <rect key="frame" x="112.5" y="383" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="jIa-sn-ckc"/>
+                                    <constraint firstAttribute="width" constant="150" id="zJP-bB-MUI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="IMG.PNG"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.23439396339999999" blue="0.1398386529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderInside" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="PWL-lG-ZEV" firstAttribute="top" secondItem="8rQ-b4-tcU" secondAttribute="bottom" constant="67" id="3Dx-vV-vGx"/>
                             <constraint firstItem="8rQ-b4-tcU" firstAttribute="top" secondItem="mCC-dB-bZp" secondAttribute="top" constant="45" id="DQb-hM-ABu"/>
-                            <constraint firstItem="PWL-lG-ZEV" firstAttribute="centerX" secondItem="8rQ-b4-tcU" secondAttribute="centerX" id="H5m-KS-5qI"/>
+                            <constraint firstItem="OZx-id-0Mo" firstAttribute="top" secondItem="8rQ-b4-tcU" secondAttribute="bottom" constant="10" id="U7I-yr-Jc4"/>
                             <constraint firstItem="8rQ-b4-tcU" firstAttribute="centerX" secondItem="mCC-dB-bZp" secondAttribute="centerX" id="g1J-Xj-cdM"/>
+                            <constraint firstItem="OZx-id-0Mo" firstAttribute="centerX" secondItem="8rQ-b4-tcU" secondAttribute="centerX" id="wiI-O1-SU4"/>
+                            <constraint firstItem="loc-NI-hJ4" firstAttribute="top" secondItem="OZx-id-0Mo" secondAttribute="bottom" constant="8" id="xMW-N4-uyV"/>
+                            <constraint firstItem="loc-NI-hJ4" firstAttribute="centerX" secondItem="Pc0-dl-vc1" secondAttribute="centerXWithinMargins" id="ze5-86-nOK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mCC-dB-bZp"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="8rQ-b4-tcU" id="nO7-ax-clF"/>
-                        <outlet property="roundCornerImageView" destination="PWL-lG-ZEV" id="uxS-lh-tJS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9iH-lD-bfI" sceneMemberID="firstResponder"/>
