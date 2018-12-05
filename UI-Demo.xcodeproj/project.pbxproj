@@ -31,10 +31,12 @@
 /* Begin PBXFileReference section */
 		5436528ED140AEF32D89A52B /* Pods-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OC/Pods-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		5FF299E65CC8150CAB2FE6A7 /* Pods-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-OC/Pods-OC.release.xcconfig"; sourceTree = "<group>"; };
+		606919C395DCAD0EE4086149 /* Pods-OC.ad-hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC.ad-hoc.xcconfig"; path = "Pods/Target Support Files/Pods-OC/Pods-OC.ad-hoc.xcconfig"; sourceTree = "<group>"; };
 		80E925C2239CCA734F3CE044 /* Pods-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift/Pods-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		A7737B2B006B1B24AB7A3954 /* Pods-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift/Pods-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		A86B3834AD7A453A1E8B68C6 /* libPods-Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C667EDF5604A4A8042060114 /* libPods-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF8622320B08F61DF6DB08E /* Pods-Swift.ad-hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift.ad-hoc.xcconfig"; path = "Pods/Target Support Files/Pods-Swift/Pods-Swift.ad-hoc.xcconfig"; sourceTree = "<group>"; };
 		E14E3DCA21A3B5750068E455 /* Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14E3DCC21A3B5750068E455 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E14E3DCD21A3B5750068E455 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -171,6 +173,8 @@
 				5FF299E65CC8150CAB2FE6A7 /* Pods-OC.release.xcconfig */,
 				80E925C2239CCA734F3CE044 /* Pods-Swift.debug.xcconfig */,
 				A7737B2B006B1B24AB7A3954 /* Pods-Swift.release.xcconfig */,
+				606919C395DCAD0EE4086149 /* Pods-OC.ad-hoc.xcconfig */,
+				DFF8622320B08F61DF6DB08E /* Pods-Swift.ad-hoc.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -439,7 +443,7 @@
 		};
 		E13BA33E21B7E1F700AE51DE /* Ad-Hoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7737B2B006B1B24AB7A3954 /* Pods-Swift.release.xcconfig */;
+			baseConfigurationReference = DFF8622320B08F61DF6DB08E /* Pods-Swift.ad-hoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -457,7 +461,7 @@
 		};
 		E13BA33F21B7E1F700AE51DE /* Ad-Hoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FF299E65CC8150CAB2FE6A7 /* Pods-OC.release.xcconfig */;
+			baseConfigurationReference = 606919C395DCAD0EE4086149 /* Pods-OC.ad-hoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
