@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>compileBitcode</key>
-	<true/>
+	<false/>
 	<key>destination</key>
 	<string>export</string>
 	<key>method</key>
-	<string>ad-hoc</string>
+	<string>development</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>com.liveyap.Family</key>
-		<string>Ad-Hoc-HYM-Family-distribution</string>
+		<key>com.test.hemu</key>
+		<string>test-dev</string>
 	</dict>
 	<key>signingCertificate</key>
-	<string>iPhone Distribution</string>
+	<string>iPhone Developer</string>
 	<key>signingStyle</key>
 	<string>manual</string>
 	<key>stripSwiftSymbols</key>
 	<true/>
 	<key>teamID</key>
-	<string>4LF4VTHXF4</string>
+	<string>7QG6LHN29T</string>
 	<key>thinning</key>
 	<string>&lt;none&gt;</string>
 </dict>
